@@ -1,0 +1,35 @@
+@import "variables";
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  margin-top: 15px;
+  position: relative;
+  border-radius: 20px;
+  border: 1px solid black;
+  input {
+    @extend body;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    border-right: 1px solid black;
+    width: 250px;
+    padding-left: 10px;
+    &:active {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    position: absolute;
+    right: 0;
+    border-radius: 0 20px 20px 0;
+    width: 89px;
+    &:hover {
+      background: $background;
+      color: $color_1;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba($color_1, 0.5);
+  display: flex;
+  justify-content: center;
+  padding-top: 15rem;
+}
+
+%modal {
+  padding: 2rem;
+  width: 600px;
+  background: #fff;
+  border-radius: 15px;
+  > div {
+    margin-top: 2rem;
+  }
+  > button {
+    position: fixed;
+    right: 650px;
+  }
+}
+
+.modal__error {
+  @extend %modal;
+  height: 140px;
+  border: 1px solid #d26969;
+}
+
+.modal__info {
+  @extend %modal;
+  height: 400px;
+  border: 1px solid #1c1c1c;
+}

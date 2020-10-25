@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "header";
+@import "variables";
+@import "search";
+@import "word";
+@import "modal";
+@import "loader";
+
+%base_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: $color_1;
+}
+
+a {
+  color: $color_1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+%button {
+  @extend body;
+  background-image: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  @extend %button
+}
+
+.container {
+  @extend %base_container;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 20%;
+
+  > div {
+
+  }
+}
+

@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+  > h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+  }
+
+  .remembered__btn {
+    @extend button;
+    color: #e5c612;
+  }
+
+  button {
+    width: 50px;
+    &:hover {
+      transform: scale3d(1.4,1.4,1.4);
+      filter: blur(0px);
+    }
+  }
+
+  > li {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: .5rem;
+  }
+}
+
+.word__definition {
+  width: 400px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

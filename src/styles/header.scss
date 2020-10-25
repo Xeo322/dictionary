@@ -1,0 +1,17 @@
+@import "variables";
+
+header {
+  height: 200px;
+  background: $background;
+  @extend %base_container;
+  flex-direction: column;
+
+  .active {
+    font-size: 26px;
+  }
+
+  .header__link {
+    width: 75%;
+    @extend %base_container;
+  }
+}
